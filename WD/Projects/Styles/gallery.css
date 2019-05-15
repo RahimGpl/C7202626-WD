@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);html{font-size:62.5%;text-rendering:optimizeLegibility}.xopixel-header{background:url(https://xopixel.com/wp-content/uploads/2018/05/xopixel-logo-pattern.png) 90% #4d4d4d;text-align:center;width:100%;height:auto;padding:2rem 0 1rem;font-size:1.8rem;line-height:1.3; margin-bottom:4em;}.xopixel-header nav a{display:inline-flex;flex-flow:row;position:relative;width:2.5em;height:2.5em;border-radius:50%;margin:0 1rem;border:4px solid #ff7bac;color:#ff7bac;text-decoration:none;transition:all .2s ease-in-out}.xopixel-header h1{font-family:'Source Code Pro',monospace;color:#fff;font-size:2rem;font-weight:100;text-transform:uppercase;letter-spacing:.08rem;}.xopixel-archive::after,.xopixel-back::after{font-family:"Font Awesome 5 Free"}.xopixel-archive::after{content:"\f004"}.xopixel-back::after{content:"\f060"}.xopixel-archive::after,.xopixel-back::after{display:block;position:absolute;font-size:1.8rem;width:100%;height:100%;line-height:2}.xopixel-archive:hover,.xopixel-back:hover{color:#fff;background-color:#ff7bac}@media screen and (min-width:600px){.xopixel-header{display:flex;align-items:center;width:100%;height:100px;padding:2rem}}
+
+
+*{
+  box-sizing:border-box;
+}
+
+:root{
+  --Snigle-font:"Sniglet",cursive;
+  --Rubik:"Rubik",sans-serif;
+  --patua:"Patua One",cursive;
+  --Lobster:"Lobster",cursive;
+  --light-black:#2e2c2caf;
+  --bggradient:linear-gradient(
+      to bottom,
+      #00c0f0, #0389f7);
+  --light-gray:rgba(255,255,255,0.877);
+}
+
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    background: #00c0f0;
+    background: var(--bggradient);
+}
+header a{
+  font-family:var(--Snigle-font);
+  font-size:0.9em;
+  color:white;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:white;
+    min-width:160px;
+    box-shadow:0px 2px 15 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropdown-content a{
+    color:black;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+}
+.dropdown-content a:hover{
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+header .nav-item:last-child{
+    padding-right: 10.5em;
+}
+
+header .nav-item{
+    padding:0.9em;
+    
+}
+header .nav-link:hover{
+    color:black;
+}
+
+
+header .row.col-md-5 img{
+    width:90%;
+}
+
+header .navbar-brand{
+    padding-left:8rem;
+    color: #fff;
+}
+header .row .col-md-5{
+    padding:4.2vmin 1vmin;
+}
+
+header .row .col-md-7{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    font-family:var(--Rubik);
+    color:white;
+}
+header .container .col-md-7 h6{
+    padding:1vmin;
+    letter-spacing: 4px;
+}
+
+header .conatiner .col-md-7 h1{
+    font-size: 8vmin;
+    font-weight: bold;
+    padding:0.1em 0em;
+}
+
+header .container .col-md-7 p{
+    padding:1vmin 2vmin;
+    font-size: 20px;
+}
+
+header .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight:bold;
+}
+.copyrights,
+  .copyrights p {
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #d3d0cb;
+    font-size: 1em;
+    color: white;
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+body {
+    background:whitesmoke;
+}
+.xop-section {
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 1.3;
+    margin: 8em 0 4em;
+}
+.project {
+    display: block;
+	width: 100%;
+	text-decoration: none;
+	margin: 1em 0;
+    cursor: pointer;
+}
+figure {
+	margin: 0;
+	padding: 0;
+}
+.project figure img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+	height: 300px;
+}
+.project figcaption {
+	padding: 1em;
+	background: var(--bggradient);
+	color: #fff;
+}
+.project h3 {
+	color: white;
+	margin: 0;
+}
+.cta {
+	margin: .5em 0;
+}
+.cta:after {
+	content: '\f061';
+	font-family: "Font Awesome 5 Free";
+	display: inline-flex;
+	margin: 0 0 .5em .5em;
+}
+@media only screen and (max-width:768px){
+    header .navbar-brand{
+        padding-left:1rem;
+    }
+
+    .section-1 .row .col-md-6 .panel
+    {
+        position:initial;
+        width: initial;
+        height: initial;
+    }
+  }
+
+
+/*
+
+When the browser is 960px or larger.
+
+*/
+
+@media screen and (min-width: 960px) {
+	.xop-wrapper {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	.xop-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1em;
+	}
+	.project:nth-child(1) {
+		grid-column: 1 / span 3;
+	}
+	.project {
+		width: 100%;
+		height: 300px;
+		text-decoration: none;
+        margin: 0;
+	}
+	.project figure {
+		position: relative;
+        overflow: hidden;
+	}
+	.project figure img {
+		position: relative;
+        z-index: 999;
+        transition: transform 0.4s;
+	}
+	.project figure:hover img {
+		transform: translateY(-90px);
+	}
+
+	.project figcaption {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 20px;
+		height: 90px;
+		width: 100%;
+	}
+}
